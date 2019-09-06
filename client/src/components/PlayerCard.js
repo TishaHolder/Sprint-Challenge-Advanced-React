@@ -11,7 +11,7 @@ import { Grid, Form, Input, TextArea, Button, Select, Card } from "semantic-ui-r
 
 function PlayerCard(props){
 
-    console.log("player card", props);
+    //console.log("player card", props);
 
     return( 
 
