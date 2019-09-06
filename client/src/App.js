@@ -1,7 +1,8 @@
 import React from 'react';
 import {useState, useEffect} from "react";
 import axios from "axios";
-import styled from 'styled-components';
+import styled from 'styled-components'
+import PlayersList from "./components/PlayersList.js";
 import './App.css';
 
 import 'semantic-ui-css/semantic.css'; 
@@ -36,7 +37,7 @@ const MainHeading = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   color: black;
   text-stroke: 5px black;
  
@@ -53,9 +54,9 @@ function App() {
       <AppContainer>
       
 
-      <MainHeading>Women's World Cup</MainHeading>      
+      <MainHeading>Women's World Cup Players Search Rankings</MainHeading>      
 
-     
+      <PlayersList />
 
       </AppContainer>
       
