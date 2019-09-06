@@ -54,7 +54,7 @@ class PlayersList extends React.Component {
     }
 
     render(){
-        console.log("players list", this.props.playersList);
+        //console.log("players list", this.props.playersList);
 
         return(
             <PlayersInfoDiv>
