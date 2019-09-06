@@ -4,16 +4,18 @@ import axios from "axios";
 import styled from 'styled-components'
 import PlayersList from "./components/PlayersList.js";
 import './App.css';
-
+import Navbar from "./components/Navbar";
+import useLocalStorage from "./hooks/useLocalStorage.js";
 import 'semantic-ui-css/semantic.css'; 
 import 'semantic-ui-css/semantic.min.css'; 
 import { Grid, Form, Input, TextArea, Button, Select } from "semantic-ui-react";
+import background from "./soccer.jpg";
 
 //styled component - main page container
 const Container = styled.div`
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+   
 
 `;
 
@@ -24,9 +26,9 @@ const AppContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;      
-    background-size: cover;
-    border: 1px solid blue;
+    align-items: center;    
+   
+    
     
 
 `;
@@ -53,6 +55,7 @@ function App() {
     <Container>
       <AppContainer>
       
+      <Navbar />
 
       <MainHeading>Women's World Cup Players Search Rankings</MainHeading>      
 
